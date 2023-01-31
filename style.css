@@ -102,11 +102,7 @@ list-style-type: none;
   .home{
     font-family: "minecraft";
     display: flex;
-  }
-
-  .titulo{
-    font-family: "minecraft";
-    font-size: 4rem;
+    
   }
   
   img{
@@ -115,12 +111,16 @@ list-style-type: none;
     border-radius: 50%;
   }
   
-  /* .home-container{
-    /* display: flex;
+  .home-container{
+    display: flex;
     justify-content: center;
     flex-wrap:wrap ;
-  } */
+  }
 
+  .titulo{
+    font-family: "minecraft";
+    font-size: 4rem;
+  }
   /* skills bar */
 
   .skills {
