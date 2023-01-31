@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <title>Gonzalo Mina</title>
+</head>
+
+<body class="dark">
+  <header class="header">
+    <h1 class="h1">
+      <a href="#home" class="a">{G}</a>
+    </h1>
+    <div id="toggle-theme" class="toggle-theme">
+      <img id="toggle-icon" src="/assets/moon.svg" alt="icontheme" class="toggle-theme__icon" />
+      <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+    </div>
+    <button class="button">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+
+    <nav class="nav">
+      <ul class="ul">
+        <li class="li"><a href="#home" class="a">home</a></li>
+        <li class="li"><a href="#skills" class="a">about</a></li>
+        <li class="li"><a href="#portfolio" class="a">portfolio</a></li>
+        <li class="li"><a href="#contact" class="a">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="home" id="home">
+    <img src="/assets/foto-perfil-0.jpeg" alt="foto de perfil" />
+
+    <div class="home-container">
+      <h1 class="titulo">Gonzalo Mina</h1>
+      <p class="about-me">
+        Soy un desarrollador front end al que le encanta trabajar en equipo y
+        recibir feedback sobre mi trabajo. 
+        Disfruto el desarrollo por la satisfacción que obtengo al superar los desafíos.
+        Estoy motivado por la oportunidad que brinda el software para impactar
+        positivamente la vida de un individuo y el mundo en su conjunto.
+      </p>
+    </div>
+
+  </article>
+
+  <article class="skills" id="skills">
+    <div class="card-skills">
+      <h2 class="card__title">Front End</h2>
+      <small> experiencia </small>
+      <div class="skills-body">
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/html-1.svg" /> HTML
+          </p>
+          <div class="skills__bar skills__bar--90"></div>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/css-3.svg" /> CSS
+          </p>
+          <div class="skills__bar skills__bar--80"></div>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/javascript-1.svg" />
+            JavaScrip
+          </p>
+          <div class="skills__bar skills__bar--70"></div>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/react-2.svg" /> React
+          </p>
+
+          <div class="skills__bar skills__bar--60"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-skills">
+      <h2 class="card__title">Design</h2>
+      <small> experiencia </small>
+      <div class="skills-body">
+        <div class="skills__item">
+          <p class="skills__tech"> <img class="skill-logo" src="/assets/adobe-photoshop-2.svg" /> Photoshop </p>
+          <div class="skills__bar skills__bar--90"></div>
+
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech"> <img class="skill-logo" src="/assets/adobe-illustrator-cc-icon.svg" /> Illustrator
+          </p>
+          <div class="skills__bar skills__bar--25"></div>
+
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech"> <img class="skill-logo" src="/assets/figma_logo.svg" /> Figma</p>
+          <div class="skills__bar skills__bar--10"></div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="portfolio" id="portfolio">
+    <article class="card card-project">
+      <div class="card__img-container">
+        <img src="/assets/rick and morty react.jpg" alt="lista de tareas" class="card__card-img" />
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="project-tag">#HTML</span>
+          <span class="project-tag">#CSS</span>
+          <span class="project-tag">#JavaScript</span>
+          <span class="project-tag">#React</span>
+        </div>
+        <h2 class="card__title">Rick and Morty react</h2>
+
+        <p class="card-text">
+          en este proyecto consumi una api utilizando fetch, Html, Scss,
+          JavaScript, react para su realizacion tuve que aprender a hacer
+          solicitudes utilizando fetch y JavaScript asincrono
+        </p>
+        <div class="buttons">
+          <a href="https://dragneel98.github.io/rick-and-morty-react/" class="button-primary button">Demo</a>
+          <a href="https://github.com/dragneel98/rick-and-morty-react" class="button-secondary button">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card-project">
+      <div class="card__img-container">
+        <img src="lista de tareas.jpg" alt="lista de tareas" class="card__card-img" />
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="project-tag">#HTML</span>
+          <span class="project-tag">#CSS</span>
+          <span class="project-tag">#JavaScript</span>
+          <span class="project-tag">#React</span>
+        </div>
+        <h2 class="card__title">Lista de tareas react</h2>
+
+        <p class="card-text">
+          esta es una lista de tareas hecha con Html, Scss, JavaScript y react
+          para su realizacion tuve que aprender a agregar modificar y eliminar
+          elementos del dom
+        </p>
+        <div class="buttons">
+          <a href="https://dragneel98.github.io/lista-tareas-react/" class="button-primary button">Demo</a>
+          <a href="https://github.com/dragneel98/lista-tareas-react" class="button-secondary button">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card-project">
+      <div class="card__img-container">
+        <img src="lista de tareas.jpg" alt="lista de tareas" class="card__card-img" />
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="project-tag">#HTML</span>
+          <span class="project-tag">#CSS</span>
+          <span class="project-tag">#JavaScript</span>
+        </div>
+
+        <h2 class="card__title">Lista de tareas</h2>
+
+        <p class="card-text">
+          esta es una lista de tareas hecha con html css JavaScript puro para
+          su realizacion tuve que aprender a agregar modificar y eliminar
+          elementos del dom, tambien aprendi a hacer validaciones de datos por
+          contenido y por fecha utilizando el objeto date
+        </p>
+        <div class="buttons">
+          <a href="https://dragneel98.github.io/lista/" class="button-primary button">Demo</a>
+          <a href="https://github.com/dragneel98/lista" class="button-secondary button">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card-project">
+      <div class="card__img-container">
+        <img src="lading page.jpg" alt="lading page" class="card__card-img" />
+      </div>
+      <div class="project">
+        <div class="project-tags">
+          <span class="project-tag">#HTML</span>
+          <span class="project-tag">#CSS</span>
+        </div>
+
+        <h2 class="card__title">Lading page</h2>
+
+        <p class="card-text">
+          esta es mi lading page hecha con html y css puro es completamente
+          responsive y fue hecha teniendo en cuenta primero a los dispositivos
+          mobiles
+        </p>
+        <div class="buttons">
+          <a href="https://dragneel98.github.io/pagina-web-responsive/" target="_blank"
+            class="button-primary button">Demo</a>
+          <a href="https://github.com/dragneel98/pagina-web-responsive" target="_blank"
+            class="button-secondary button">Code</a>
+        </div>
+      </div>
+    </article>
+  </article>
+  <article class="contact" id="contact">
+    <div>contacto</div>
+  </article>
+  <script src="script.js"></script>
+</body>
+
+</html>
