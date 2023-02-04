@@ -248,7 +248,7 @@ li:hover{
   .button{
     border-radius: 0.5rem;
     padding: 0.5rem;
-    background-color: var(--text-color-terminal);
+    background-color: var(--bg-color);
     margin: 1rem;
     margin-left: 0;
   }
@@ -391,6 +391,7 @@ li:hover{
       /* display: block; */
       height:50vh;
       pointer-events: auto;
+      background-color: var(--bg-color);
     }
     .header .ul{
       flex-direction: column;
