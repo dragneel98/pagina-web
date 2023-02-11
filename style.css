@@ -195,10 +195,9 @@ li:hover{
 
   .portfolio{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(21rem,1fr));
     gap: 2rem;
     padding-top: 3rem;
-    
   }
 
   .card-project{
@@ -210,7 +209,13 @@ li:hover{
     border-radius: 2rem;
     /* max-height:25rem; */
   }
-
+  .card-text{
+    overflow-y: scroll;
+  }
+  .card-text::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    width: 0.3rem;
+  }
   .card__img-container{
     display: flex;
     align-items: center;
@@ -398,7 +403,8 @@ li:hover{
 
     .about-me{
       min-width: 50%;
-      padding: 1rem;
+      padding: 10rem;
+      font-size: 2rem;
     }
 
     .card-skill-container{
@@ -406,8 +412,27 @@ li:hover{
       display: block;
     }
 
+    .card__title{
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    .card-project .skill-logo{
+      min-width: 3rem;
+    }
+
+    .skill-logo{
+      min-width: 4rem;
+    }
+    .skills__tech{
+      font-size: 2rem;
+    }
+
     .skills-body{
       display: flex;
     }
 
+    .card-project{
+      max-height: 350px;
+      
+    }
   }
