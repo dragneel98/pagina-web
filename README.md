@@ -1,1 +1,1 @@
-este es mi portfolio contiene todos mis proyectos y cuenta con responsive design, un modo oscuro y un diseño interesante
+este es mi portfolio contiene todos mis proyectos y cuenta con responsive design, un modo oscuro y un diseño interesante ademas de multiples formas de contactarme
