@@ -373,7 +373,6 @@ li:hover{
       pointer-events: none;
       overflow: hidden;
       transition: all .5s ease;
-  
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -403,18 +402,17 @@ li:hover{
 
     .about-me{
       min-width: 50%;
-      padding: 10rem;
+      padding: 5rem;
       font-size: 2rem;
     }
 
     .card-skill-container{
       min-width: 50%;
       display: block;
-      background-color: red;
     }
 
     .card__title{
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-bottom: 0;
     }
     .card-project .skill-logo{
@@ -425,7 +423,7 @@ li:hover{
       min-width: 4rem;
     }
     .skills__tech{
-      font-size: 2rem;
+      font-size: 1rem;
     }
 
     .skills-body{
