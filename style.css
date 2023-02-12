@@ -209,13 +209,6 @@ li:hover{
     border-radius: 2rem;
     /* max-height:25rem; */
   }
-  .card-text{
-    overflow-y: scroll;
-  }
-  .card-text::-webkit-scrollbar{
-    background-color: var(--bg-color);
-    width: 0.3rem;
-  }
   .card__img-container{
     display: flex;
     align-items: center;
