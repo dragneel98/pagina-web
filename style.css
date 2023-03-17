@@ -54,6 +54,9 @@ li:hover{
   text-shadow: var(--text-box-shadow);
 }
 
+.articles{
+  padding: 5rem;
+}
 .header{
     background-color: transparent;
     padding-left: 2rem;
@@ -155,7 +158,6 @@ li:hover{
     flex-wrap: wrap;
     flex-direction: row;
     gap: 1rem;
-    padding: 1rem;
   }
 
   .card-skill-container{
@@ -400,8 +402,8 @@ li:hover{
     }
 
     .about-me{
-      min-width: 50%;
-      padding: 5rem;
+      /* min-width: 50%; */
+      /* padding-left: 3rem; */
       font-size: 2rem;
     }
 
