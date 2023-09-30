@@ -237,6 +237,10 @@ li:hover{
     width: 2rem;
     padding-left: 1rem;
   }
+  .skill-logo-sass{
+    width: 2rem;
+    padding-left: 1rem;
+  }
 
   /* portfolio */
 
@@ -407,7 +411,7 @@ li:hover{
 
   /* media queries */
   @media screen and (max-width:480px){
-    
+  
     .burger{
       display: block;
     }
@@ -470,12 +474,17 @@ li:hover{
     .skill-logo{
       min-width: 4rem;
     }
+    .skill-logo-sass{
+      min-width: 4.5rem;
+    }
     .skills__tech{
       font-size: 1rem;
     }
 
     .skills-body{
       display: flex;
+      max-width: 800px;
+      flex-wrap: wrap;
     }
 
     .card-project{
