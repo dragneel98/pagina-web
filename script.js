@@ -24,7 +24,7 @@ toggleTheme.addEventListener('click', ()=>{
   const typed = new Typed('.typed', {
     strings: [
         '<i class="titulo">Gonzalo Mina</i>',
-        '<i class="titulo">FrontEnd Dev</i>'
+        '<i class="titulo">Full Stack Dev</i>'
         
         
     ],
