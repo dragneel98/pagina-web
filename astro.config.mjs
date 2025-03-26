@@ -11,5 +11,6 @@ export default defineConfig({
   // Your configuration options here
   site: 'https://gonzalomina.dev',
   // Enable static site generation
+  base: '/pagina-web',
   output: 'static',
 });
