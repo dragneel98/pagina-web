@@ -2,9 +2,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // Your configuration options here
-  site: 'https://gonzalomina.github.io',
-  // Enable static site generation
-  base: '/pagina-web',
+  site: 'https://dragneel98.github.io',
+  base: '/pagina-web/', // Asegúrate de que tenga la barra al final
   output: 'static',
 });
