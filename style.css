@@ -1,64 +1,76 @@
-
-:root{
-  --primary-color:rgba(223, 230, 233,1.0);
-  --text-color:#282828;
-  --text-color-terminal:#0DF205;
-  --text-box-shadow:#09A603 3px 0 20px;
-  --bg-color:rgba(223, 230, 233,1.0);
-  --bg-card-color:rgba(0, 206, 201,1.0);
-  --bg-bar-color: rgb(136, 135, 135);
-  --border-articles: 0.4em;
-  --transition: color 0.3s, background-color 0.4s easy-in-out;
-  --skills-bar-length: 0%;
-}
-
-@font-face {
-  font-family: "minecraft" ;
-  src: url(assets/Minecraft.ttf);
-}
-*{
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-body{
-    color:var(--text-color);
+:root {
+    --primary-color: rgba(223, 230, 233, 1.0);
+    --text-color: #282828;
+    --text-color-terminal: #0df205;
+    --text-box-shadow: #09a603 3px 0 20px;
+    --bg-color: rgba(223, 230, 233, 1.0);
+    --bg-card-color: rgba(0, 206, 201, 1.0);
+    --bg-bar-color: rgb(136, 135, 135);
+    --border-articles: 0.4em;
+    --transition: color 0.3s, background-color 0.4s easy-in-out;
+    --skills-bar-length: 0%;
+  }
+  
+  @font-face {
+    font-family: "minecraft";
+    src: url(assets/Minecraft.ttf);
+  }
+  * {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  /*
+  body {
+    color: var(--text-color);
     background-color: rgb(248, 252, 255);
     min-height: 100vh;
     margin: 0;
-
-}
-
-body.dark{
-  --primary-color:rgb(26, 26, 26);
-  --bg-color: #282828;
-  --text-color:rgba(223, 230, 233,1.0);
-  --bg-card-color:rgb(17, 21, 21);
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  }
+  
+  body.dark {
+    --primary-color: rgb(26, 26, 26);
+    --bg-color: #282828;
+    --text-color: rgba(223, 230, 233, 1.0);
+    --bg-card-color: rgb(17, 21, 21);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  strong,
+  blockquote,
+  i,
+  b,
+  u,
+  em {
     font-size: 1rem;
     font-weight: inherit;
     font-style: inherit;
     text-decoration: none;
     color: inherit;
-}
-
-li {
-list-style-type: none;
-text-decoration: none;
-}
-li:hover{
-  text-decoration:underline;
-  text-shadow: var(--text-box-shadow);
-}
-
-.articles{
-  padding: 5rem;
-}
-.header{
+  }
+  
+  li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  li:hover {
+    text-decoration: underline;
+    text-shadow: var(--text-box-shadow);
+  }
+  
+  .articles {
+    padding: 5rem;
+  }
+  .header {
     background-color: transparent;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -66,44 +78,43 @@ li:hover{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    color:var(--text-color);
+    color: var(--text-color);
     position: sticky;
     top: 0;
     z-index: 1;
     color: var(--text-color-terminal);
-    
   }
-
+  
   /* boton del modo oscuro */
-
-  .toggle-theme{
+  /*
+  .toggle-theme {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
   }
-  .toggle-theme__icon{
+  .toggle-theme__icon {
     margin-right: 0.5em;
     width: 20px;
   }
-  .toggle-theme__text{
+  .toggle-theme__text {
     font-size: 1rem;
   }
-
-  article{
+  
+  article {
     padding: 1rem;
     min-height: 100vh;
   }
-
-  /* nav-button */
   
+  /* nav-button */
+/*   
   .burger {
     display: none;
     position: relative;
     width: 40px;
     height: 20px;
     background: transparent;
-    cursor: pointer; 
+    cursor: pointer;
   }
   .burger input {
     display: none;
@@ -148,19 +159,18 @@ li:hover{
     top: 28px;
     left: 5px;
   }
-
-  .header .ul{
+   */
+  /* .header .ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    
   }
-  .header .li{
+  .header .li {
     margin: 0 .5em;
   }
-
-  .home{
+  
+  .home {
     font-family: "minecraft";
     display: flex;
     flex-wrap: wrap;
@@ -168,33 +178,33 @@ li:hover{
     align-items: center;
     min-height: 95vh;
   }
-  .img-container{
+  .img-container {
     min-width: 16rem;
     max-width: 16rem;
     overflow: hidden;
   }
-
-  .img{
+  
+  .img {
     width: 100%;
     border-radius: 50%;
   }
   
-  .home-container{
+  .home-container {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
-
-  .titulo{
+  
+  .titulo {
     font-family: "minecraft";
     font-size: 4rem;
     margin: 0;
     min-width: 15rem;
     color: var(--text-color-terminal);
     text-shadow: var(--text-box-shadow);
-  }
-
+  } */
+  
   /* skills bar */
-
+/*   
   .skills {
     display: flex;
     align-items: center;
@@ -203,8 +213,8 @@ li:hover{
     flex-direction: row;
     gap: 1rem;
   }
-
-  .card-skill-container{
+  
+  .card-skill-container {
     display: flex;
     min-width: 100%;
     justify-content: space-between;
@@ -212,52 +222,50 @@ li:hover{
   
   .card-skills {
     flex-direction: row;
-
   }
-
-  .skills__header{
+  
+  .skills__header {
     display: flex;
     justify-content: space-between;
-    /* width: 150px; */
     margin-left: auto;
   }
-  .skills__level{
+  .skills__level {
     font-size: 1em;
   }
-  .skills__item{
+  .skills__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .skills__tech{
+  .skills__tech {
     margin-right: 1rem;
   }
   
-  .skill-logo{
+  .skill-logo {
     width: 2rem;
     padding-left: 1rem;
   }
-  .skill-logo-sass{
+  .skill-logo-sass {
     width: 2rem;
     padding-left: 1rem;
-  }
-
+  } */
+  
   /* portfolio */
-
-  .title{
+  
+  /* .title {
     color: var(--text-color-terminal);
     font-size: 2rem;
   }
-
-  .portfolio{
+  
+  .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     grid-auto-flow: dense;
     gap: 2rem;
     padding-top: 3rem;
   }
-
-  .card-project{
+  
+  .card-project {
     background-color: var(--primary-color);
     margin-bottom: 1rem;
     display: flex;
@@ -266,38 +274,35 @@ li:hover{
     border-radius: 2rem;
     height: 30rem;
   }
-  .card__img-container{
+  .card__img-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-     /* min-width: 10rem;
-    max-width: 12rem; */
     height: 100%;
   }
-
-  .card__card-img{
+  
+  .card__card-img {
     width: 14rem;
     height: 20rem;
     border-radius: var(--border-articles);
     overflow: hidden;
-    /* object-fit:fill; */
   }
-
-  .project{
+  
+  .project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .button{
+  .button {
     border-radius: 0.5rem;
     padding: 0.5rem;
     background-color: var(--text-color-terminal);
     color: var(--bg-color);
     margin: 1rem;
     margin-left: 0;
-  }
-  .buttons{
+  } 
+  .buttons {
     margin-bottom: 1rem;
   }
   .button,
@@ -312,8 +317,8 @@ li:hover{
     box-shadow: 6px 0px 0px var(--primary-color);
     outline: transparent;
     position: relative;
-    }
-    .button::after {
+  }
+  .button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -327,141 +332,152 @@ li:hover{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, var(--primary-color) 3%, var(--primary-color) 5%, var(--text-color-terminal) 5%);
+    background: linear-gradient(
+      45deg,
+      transparent 3%,
+      var(--primary-color) 3%,
+      var(--primary-color) 5%,
+      var(--text-color-terminal) 5%
+    );
     text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px var(--primary-color);
     clip-path: var(--slice-0);
-    }
-    .button:hover::after {
+  }
+  .button:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
-    }
-
-  /* contact */
+  }
   
-  .contact{
+  /* contact */
+  /*
+  .contact {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
   }
-  .contact-container{
+  .contact-container {
     display: flex;
     flex-direction: column;
   }
-
+  
   /* estilos para los links */
-
-  .button-contact{
+  /*
+  .button-contact {
     margin-bottom: 5rem;
   }
   .button-contact,
   .button-contact::after {
-  padding: 16px 20px;
-  font-size: 18px;
-  background: linear-gradient(45deg, transparent 5%, var(--text-color-terminal) 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  line-height: 1;
-  box-shadow: 6px 0px 0px var(--primary-color);
-  outline: transparent;
-  position: relative;
+    padding: 16px 20px;
+    font-size: 18px;
+    background: linear-gradient(45deg, transparent 5%, var(--text-color-terminal) 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 1;
+    box-shadow: 6px 0px 0px var(--primary-color);
+    outline: transparent;
+    position: relative;
   }
-
-  .button-contact::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  content: "HOVER ME";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, var(--primary-color) 3%, var(--primary-color) 5%, var(--text-color-terminal) 5%);
-  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px var(--primary-color);
-  clip-path: var(--slice-0);
-  }
-
-  .button-contact:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-  }
-
-  @keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-  }
-
-
-  /* media queries */
-  @media screen and (max-width:480px){
   
-    .burger{
+  .button-contact::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "HOVER ME";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      transparent 3%,
+      var(--primary-color) 3%,
+      var(--primary-color) 5%,
+      var(--text-color-terminal) 5%
+    );
+    text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px var(--primary-color);
+    clip-path: var(--slice-0);
+  }
+  
+  .button-contact:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+  
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+  
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+  
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+  
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+  
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+  
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+  
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+  
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+  
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+  
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  
+  /* media queries */
+  /*
+  @media screen and (max-width: 480px) {
+    .burger {
       display: block;
     }
-    .articles{
+    .articles {
       padding: 1rem;
     }
-    .header .nav{
-      width:100vw;
-      height:0;
+    .header .nav {
+      width: 100vw;
+      height: 0;
       pointer-events: none;
       overflow: hidden;
       transition: all .5s ease;
@@ -470,89 +486,87 @@ li:hover{
       justify-content: center;
       align-items: center;
     }
-    .header .nav.activo{
-      height:50vh;
+    .header .nav.activo {
+      height: 50vh;
       pointer-events: auto;
       background-color: var(--bg-color);
     }
-    .header .ul{
+    .header .ul {
       flex-direction: column;
       gap: 1rem;
     }
-    .header .li{
+    .header .li {
       margin: 1rem 0;
     }
-    .card-project{
+    .card-project {
       width: 18rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-    .card__img-container{
+    .card__img-container {
       width: auto;
       justify-content: center;
     }
-    .card__card-img{
+    .card__card-img {
       min-width: auto;
       max-width: 15rem;
       height: 10rem;
     }
-    .buttons{
+    .buttons {
       margin-top: 1rem;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
     }
-    .button{
+    .button {
       margin: 0;
     }
-  
   }
-
-  @media screen and (min-width:960px){
-
-    .skills{
+  
+  @media screen and (min-width: 960px) {
+    .skills {
       flex-wrap: nowrap;
       columns: 2;
     }
-
-    .about-me{
-      /* min-width: 50%; */
-      /* padding-left: 3rem; */
+  
+    .about-me {
       font-size: 2rem;
     }
-
-    .card-skill-container{
+  
+    .card-skill-container {
       min-width: 50%;
       display: block;
     }
-
-    .card__title{
+  
+    .card__title {
       font-size: 1.5rem;
       margin-bottom: 0;
       margin-top: 0.2rem;
     }
-    .card-project .skill-logo{
+    .card-project .skill-logo {
       min-width: 3rem;
     }
-
-    .skill-logo{
+  
+    .skill-logo {
       min-width: 4rem;
     }
-    .skill-logo-sass{
+    .skill-logo-sass {
       min-width: 4.5rem;
     }
-    .skills__tech{
+    .skills__tech {
       font-size: 1rem;
     }
-
-    .skills-body{
+  
+    .skills-body {
       display: flex;
       max-width: 800px;
       flex-wrap: wrap;
     }
-
+  
     /* .card-project{
-      max-height: 21rem;
-    } */
-  }
+        max-height: 21rem;
+      } 
+  } */
+  
+  

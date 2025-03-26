@@ -1,0 +1,192 @@
+---
+---
+
+<article class="skills articles" id="about">
+  <div>
+    <p class="about-me">
+      Soy un desarrollador full stack al que le gustar trabajar en equipo y
+      recibir feedback sobre mi trabajo.
+    </p>
+    <p class="about-me">
+      Disfruto el desarrollo por la satisfacción que obtengo al superar los desafíos. 
+      Comprometido con dar la mejor experiencia al usuario
+    </p>
+  </div>
+  <div class="card-skill-container">
+    <div class="card-skills">
+      <h2 class="card__title">tecnologías</h2>
+
+      <div class="skills-body">
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/html-1.svg" /> HTML
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/css-3.svg" /> CSS
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/javascript-1.svg" /> JavaScrip
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/icons8-typescript-48.png" /> TypeScript
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/react-2.svg" /> React
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo-sass" src="/assets/sass-1.svg" /> SASS
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/material-ui-1.svg" /> Material iu
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/nodejs-2.svg" /> Nodejs
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/react-2.svg" /> React Native
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/ionic-icon.svg" /> Ionic
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/angular-icon.svg" /> Angular
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-skills">
+      <h2 class="card__title">Design</h2>
+
+      <div class="skills-body">
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/adobe-photoshop-2.svg" />
+            Photoshop
+          </p>
+        </div>
+        <div class="skills__item">
+          <p class="skills__tech">
+            <img class="skill-logo" src="/assets/figma_logo.svg" /> Figma
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .card-skill-container {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+  }
+  
+  .card-skills {
+    flex-direction: row;
+  }
+
+  .skills__header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+  
+  .skills__level {
+    font-size: 1em;
+  }
+  
+  .skills__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .skills__tech {
+    margin-right: 1rem;
+  }
+  
+  .skill-logo {
+    width: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .skill-logo-sass {
+    width: 2rem;
+    padding-left: 1rem;
+  }
+
+  .about-me {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 960px) {
+    .skills {
+      flex-wrap: nowrap;
+      columns: 2;
+    }
+
+    .about-me {
+      font-size: 2rem;
+    }
+
+    .card-skill-container {
+      min-width: 50%;
+      display: block;
+    }
+
+    .card__title {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      margin-top: 0.2rem;
+    }
+
+    .skill-logo {
+      min-width: 4rem;
+    }
+    
+    .skill-logo-sass {
+      min-width: 4.5rem;
+    }
+    
+    .skills__tech {
+      font-size: 1rem;
+    }
+
+    .skills-body {
+      display: flex;
+      max-width: 800px;
+      flex-wrap: wrap;
+    }
+  }
+</style>
+
